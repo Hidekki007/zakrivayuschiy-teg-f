@@ -15,6 +15,78 @@
 */
 
 .page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  background-image: var(--page-background-image);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.header { 
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-rows: 56% 14% 1fr;
+  margin-block-start: 102px;
+  margin-block-end: 102px;
+  font-family: "PressStart2P";
+  outline: 2px solid var(--text-color);
+  width: clamp(23.438rem, 16.373rem + 30.14vw, 43.5rem);
+  min-block-size: 364px;
+  /* width: 696px;
+  height: 364px; */
+  background-color: var(--page-background-color);
+  color: var(--text-color);
+}
+
+.header__title {
+  font-family: "PressStart2P";
+  font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  font-weight: 400;
+  line-height: 65px;
+}
+
+.header__title {
+  align-self: end;
+}
+
+.header__subtitle {
+  font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+} 
+
+.header__subtitle {
+  justify-self: center;
+}
+
+.theme-menu__list {
+  display: grid;
+  gap: 14px;
+}
+
+.theme-menu__button {
+  border: none;
+  background: transparent;
+}
+
+.header__theme-menu {
+  justify-self: center;
+}
+
+.card_list {
+
+}
+
+.card_list-item {
+  
+}
+
+.card_img {
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  /* inline-size: 100%; */
+  /* aspect-ratio: 1 / 1; */
 }
