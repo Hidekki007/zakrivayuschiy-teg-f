@@ -80,6 +80,7 @@
                 viewBox="0 0 39 36"
                 fill="none"
                 class="like-icon"
+                aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -585,23 +586,40 @@
         </li>
 
       </ul>
+
+     
       <button
       type="button"
       onclick="window.modal.showModal();"
       aria-controls="modal"
       class="button button_save"
     >
-      <svg class="button_icon"  width="39" height="39" viewBox="0 0 39 39" xmlns="http://www.w3.org/2000/svg" >
-        <use href="./svg/floppy.svg#floppy"></use>
+      <svg 
+       class="button_icon" 
+       xmlns="http://www.w3.org/2000/svg" 
+       viewBox="0 0 39 39"
+       width="39" 
+       height="39">
+        <use href="svg/floppy.svg#floppy"></use>
       </svg>
+
       <span class="button__text">Сохранить на память</span>
     </button>
+  
     </main>
+    
     <dialog class="modal" id="modal">
       <div class="modal_content">
-        <svg class="modal_icon"  width="39" height="39" viewBox="0 0 39 39" xmlns="http://www.w3.org/2000/svg" >
-          <use href="./svg/floppy.svg#floppy"></use>
-        </svg>
+
+        <svg 
+       class="button_icon_modal" 
+       xmlns="http://www.w3.org/2000/svg" 
+       viewBox="0 0 39 39"
+       width="39" 
+       height="39">
+        <use href="svg/floppy.svg#floppy"></use>
+      </svg>
+
         <p>Вставьте дискету,чтобы продолжить</p>
       </div>
       <form method="dialog">
@@ -610,6 +628,7 @@
         </button>
       </form>
     </dialog>
+  
     <script src="./scripts/like.js"></script>
   </body>
 </html>
